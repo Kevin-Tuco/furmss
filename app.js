@@ -37,14 +37,14 @@ app.use(session({
 
 app.use('/static', express.static('public'));
 
-app.engine("hbs", hbs.engine({
-    extname: "hbs", 
-    helpers: {
-        formatDate: function(date) {
-            return `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}`;
-        }
-    }
-}));
+// app.engine("hbs", hbs.engine({
+//     extname: "hbs", 
+//     helpers: {
+//         formatDate: function(date) {
+//             return `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}`;
+//         }
+//     }
+// }));
 app.set("view engine", "hbs");
 hbs.registerPartials(__dirname + '/views/partials');
 app.set("views", "./views");
