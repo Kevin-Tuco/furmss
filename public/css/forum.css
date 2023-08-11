@@ -1,0 +1,303 @@
+@import url('https://www.myfonts.com/collections/helvetica-font-linotype');
+
+*{
+	font-family: 'Helvetica', sans-serif;
+	font-size: 1rem;
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	top: 0;
+	position: relative;
+	padding: 2.25rem;
+}
+
+header ul{
+	display: flex;
+	position: relative;
+	list-style-type: none;
+	float: right;
+	align-items: center;
+}
+
+header ul li{
+	margin-left: 1rem;
+}
+
+header ul li a{
+	text-decoration: none;
+	color: #102312;
+	font-size: 1.8rem;
+	padding: 0.5rem 1rem;
+}
+
+header ul li #current{
+	text-decoration: underline;
+	color: white;
+	background-color: #102312;
+	border-radius: 1rem;
+}
+
+header ul li .menu:hover{
+	text-decoration: underline;
+	color: white;
+	background-color: #102312;
+	border-radius: 1rem;
+}
+
+header ul li #current:hover{
+	text-decoration: underline;
+	color: #102312;
+	background-color: white;
+	border-radius: 1rem;
+}
+
+header ul li #prfPic{
+	width: 2.75rem;
+	height: 2.75rem;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 3px solid rgba(0,0,0,0);
+}
+
+header ul li #prfPic:hover{
+	border: 3px solid #102312;
+}
+
+body{
+	width: 100%;
+	height: 100vh;
+	background-image: url('/static/images/bg.jpg');
+}
+
+.tutor{
+	margin: 2rem 3rem;
+}
+
+.tutor .titleBar{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.tutor .titleBar h2{
+	font-size: 3rem;
+	color: #102312;
+	text-align: center;
+}
+
+.tutor .titleBar #return{
+	text-decoration: none;
+	color: #102312;
+	font-size: 1.25rem;
+	font-weight: 550;
+	margin-top: 1rem;
+	padding: 0.5rem 1rem;
+}
+
+.tutor .titleBar #return:hover{
+	background-color: #102312;
+	color: white;
+	border-radius: 1.5rem;
+}
+
+.tutor .titleBar .new #newBtn{
+	font-size: 1.25rem;
+	border: none;
+	background-color: rgba(0,0,0,0);
+	color: #777777;
+	font-weight: 550;
+	padding: 0.5rem 1rem;
+	margin-top: 1.5rem;
+}
+
+.tutor .titleBar .new #newBtn:hover{
+	background-color: #102312;
+	color: white;
+	border-radius: 50%;
+}
+
+.tutor .titleBar .new #newBtn:focus{
+	background-color: #102312;
+	color: white;
+	border-radius: 1.5rem;
+}
+
+.tutor .search{
+	display: flex;
+	margin-bottom: 1rem;
+	margin-left: 80%;
+	align-items: center;
+}
+
+.tutor .search input{
+	width: 60%;
+	height: 1rem;
+	resize: vertical;
+	margin-bottom: 0.25rem;
+	padding: 1rem;
+	background-color: rgba(0,0,0,0);
+	border: none;
+	border-bottom: 1.5px solid #102312;
+}
+
+.tutor .search button{
+	border: none;
+	background-color: rgba(0,0,0,0);
+	color: #777777;
+	font-weight: 550;
+	padding: 0.25rem 0.5rem;
+
+	margin-top: 0.5rem;
+	text-align: center;
+}
+
+.tutor .search button:hover{
+	background-color: #102312;
+	color: white;
+	border-radius: 1rem;
+}
+
+.forumDetails{
+	display: none;
+	width: 20%;
+	background-color: rgba(255,255,255, 0.75);
+	box-shadow: 0 10px 10px rgba(0,0,0,0.25);
+	margin-bottom: 1rem;
+	padding: 0.5rem 1rem;
+	padding-bottom: 1rem;
+	border-radius: 1rem;
+	position: absolute;
+	z-index: 100;
+	margin-left: 71.125%;
+}
+
+.show{
+	display: block;
+}
+
+.forumDetails p{
+	font-size: 1.25rem;
+	color: #102312;
+	margin-bottom: 0.125rem;
+	margin-top: 1rem;
+}
+
+.forumDetails input{
+	width: 60%;
+	height: 1rem;
+	resize: vertical;
+	margin-bottom: 0.25rem;
+	padding: 1rem;
+	background-color: rgba(0,0,0,0);
+	border: none;
+	border-bottom: 1.5px solid #102312;
+}
+
+.forumDetails input:focus{
+	background-color: rgba(0,0,0,0.05);
+}
+
+.forumDetails textarea{
+	width: 90%;
+	height: 5rem;
+	resize: vertical;
+	margin-bottom: 0.25rem;
+	padding: 1rem;
+	background-color: rgba(0,0,0,0);
+	border: none;
+	border-bottom: 1.5px solid #102312;
+}
+
+.forumDetails textarea:focus{
+	background-color: rgba(0,0,0,0.05);
+}
+
+.forumDetails select{
+	font-size: 1rem;
+	margin-bottom: 0.25rem;
+	padding: 1rem;
+	color: #102312;
+	background-color: rgba(0,0,0,0);
+	border: none;
+	border-bottom: 1.5px solid #102312;
+	padding: 0.25rem;
+}
+
+.forumDetails button{
+	border: none;
+	background-color: rgba(0,0,0,0);
+	color: #777777;
+	font-weight: 550;
+	padding: 0.25rem 0.5rem;
+	margin-left: 0.5rem;
+	margin-top: 0.5rem;
+	text-align: center;
+}
+
+.forumDetails button:hover{
+	background-color: #102312;
+	color: white;
+	border-radius: 1rem;
+}
+
+.topics{
+	width: 100%;
+	margin-top: 1rem;
+}
+
+.topics .sched{
+	background-color: rgba(255,255,255,.2);
+	box-shadow: 0 10px 10px rgba(0,0,0,0.25);
+	margin-bottom: 1rem;
+	padding: 0.5rem 1rem;
+	border-radius: 1rem;
+}
+
+.topics .sched:hover{
+	transform: scale(1.005);
+}
+
+.topics .sched .thread{
+	text-decoration: none;
+	color: #102312;
+}
+
+.topics .sched .thread .threadHeader{
+	display: flex;
+	justify-content: space-between;
+}
+
+.topics .sched .thread h4{
+	font-size: 1.5rem;
+}
+
+.topics .sched .thread .info{
+	display: flex;
+	position: relative;
+	color: #777777;
+	font-weight: 390;
+}
+
+.topics .sched .thread .info p{
+	margin-right: 1rem;
+}
+
+.topics .sched button{
+	border: none;
+	background-color: rgba(0,0,0,0);
+	width: 19.9px;
+	height: 20px;
+	background-image: url('/static/images/spritesheet.png');
+	background-size: 84.1px 20px;
+	background-position: -39.8px 0px;
+	opacity: 50%;
+	margin-right: 0.5rem;
+	margin-top: 0.5rem;
+}
+
+.topics .sched button:hover{
+	opacity: 100%;
+}

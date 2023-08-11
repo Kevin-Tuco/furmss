@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="/static/css/signup.css">
+<script src="/static/js/register_form.js" defer></script>
+<div id = "container">
+    <div class="card">
+        <h2 class="card-heading">
+            Sign Up
+        </h2>
+        <form id = "signup_form" class="card-form">
+            <div class="input">
+                <input type="text" id = "full_name" name = "full_name" class="input-field" required/>
+                <label class="input-label">Full Name</label>
+            </div>
+            <div class="input">
+                <input type="text" id = "id_num" name = "id_num" class="input-field" required/>
+                <label class="input-label">ID Number</label>
+            </div>
+            <div class="input">
+                <input type="text" id = "email" name = "email" class="input-field" required/>
+                <label class="input-label">Email</label>
+            </div>
+            <div class="input">
+                <input type="password" id = "su_p1" name = "su_p1" class="input-field" required/>
+                <label class="input-label">Password</label>
+            </div>
+            <div class="input">
+                <input type="password" id = "su_p2" name = "su_p2" class="input-field" required/>
+                <label class="input-label">Confirm Password</label>
+            </div>
+            <div class="action">
+                <button type = "submit" id = "registerBtn" class="action-button">Get started</button>
+            </div>
+        </form>
+        <div class="card-info">
+            <p>By signing up you are agreeing to our <a href="#">Terms and Conditions</a></p>
+        </div>
+    </div>
+</div>

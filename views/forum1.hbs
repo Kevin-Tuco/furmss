@@ -1,0 +1,43 @@
+<link rel="stylesheet" type="text/css" href="/static/css/forum.css">
+<script src="/static/js/forms_func.js"></script>
+<script src="/static/js/forum1_form.js"></script>
+
+<header>
+	<ul>
+		<li><a href="/changePage/loadForumHome" class="menu">Home</a></li>
+		<li><a href="/changePage/loadForumMainPage" class="menu" id="current">Forums</a></li>
+		<li><a href=""><img src="/static/images/user.jpg" id="prfPic"></a></li>
+	</ul>
+</header>
+<div class="tutor">
+	<div class="titleBar">
+		<a href="/changePage/loadForumMainPage" id="return">Back</a>
+		<h2>Professors to Pick</h2>
+		<div class="new">
+			<button id="newBtn">+<Button>
+		</div>
+	</div>
+	<div class="search">
+		<input type="text" id="searchBar" class="searchBar" placeholder="search...">
+		<button class="searchBar">Search</button>
+	</div>
+	<div class="forumDetails">
+		<p>Forum Name:</p>
+		<input type="text" id="forumName">
+		<p>Subject/Course:</p>
+		<select id="courses">
+			<option value="default">choose</option>
+			<option value="CCADPRG">CCADPRG</option>
+			<option value="STALGCM">STALGCM</option>
+			<option value="CCAPDEV">CCAPDEV</option>
+		</select>
+		<p>Forum Message:</p>
+		<textarea type="text" id="forumContent"></textarea>
+		<button id="createForum1">create</button>
+	</div>
+	<div id="topics" class="topics">
+		{{#each forum1_previews}}
+            {{> forum1_preview this}}
+        {{/each}}
+	</div>
+</div>
