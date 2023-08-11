@@ -5,7 +5,7 @@ const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const mongoose = require("mongoose");
 const bodyParse = require("body-parser");
-const exphbs = require('express-handlebars');
+// const exphbs = require('express-handlebars');
 const hbs = require('hbs');
 const cors = require('cors')
 
@@ -37,7 +37,7 @@ app.use(session({
 
 app.use('/static', express.static('public'));
 
-app.engine("hbs", exphbs.engine({
+app.engine("hbs", hbs.engine({
     extname: "hbs", 
     helpers: {
         formatDate: function(date) {
